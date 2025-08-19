@@ -103,10 +103,10 @@ PowerGenerator → Transformer → CircuitBreaker → Load
      ↑              ↑              ↑
      └──────────────┴──────────────┴─→ PowerGridController
 
-Generator supplies power to the transformer
-Transformer steps voltage for distribution
-CircuitBreaker provides protection and load isolation
-Controller manages all components and coordinates operations
+Generator supplies power to the transformer.
+Transformer steps voltage for distribution.
+CircuitBreaker provides protection and load isolation.
+Controller manages all components and coordinates operations.
 
 ## Running the System
 The main class (Main.java) includes comprehensive test scenarios:
