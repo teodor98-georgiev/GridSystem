@@ -1,7 +1,7 @@
 # Power Grid Management System
-Overview
+Overview:
 This project simulates a comprehensive electrical power grid management system implemented in Java. It models the core components of an electrical grid including power generators, transformers, and circuit breakers, along with their monitoring, maintenance, and control operations.
-System Architecture
+
 ## Core Components
 ### ElectricalComponent (Abstract Base Class)
 
