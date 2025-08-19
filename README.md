@@ -6,97 +6,97 @@ This project simulates a comprehensive electrical power grid management system i
 ### ElectricalComponent (Abstract Base Class)
 
 Base class for all grid components
-Provides common functionality: status management, maintenance history, efficiency calculations
-Enforces implementation of component-specific validation and maintenance procedures
+Provides common functionality: status management, maintenance history, efficiency calculations.
+Enforces implementation of component-specific validation and maintenance procedures.
 
 ### PowerGenerator
 
-Simulates electrical power generation with realistic electrical parameters
-Handles power factor correction and load balancing
-Manages generator startup/shutdown procedures
-Calculates active and reactive power output
+Simulates electrical power generation with realistic electrical parameters.
+Handles power factor correction and load balancing.
+Manages generator startup/shutdown procedures.
+Calculates active and reactive power output.
 
 ### Transformer
 
-Models voltage transformation between generator and distribution levels
-Implements primary/secondary voltage and current relationships
-Includes temperature monitoring and cooling system management
-Calculates transformation losses and efficiency
+Models voltage transformation between generator and distribution levels.
+Implements primary/secondary voltage and current relationships.
+Includes temperature monitoring and cooling system management.
+Calculates transformation losses and efficiency.
 
 ### CircuitBreaker
 
-Provides overcurrent protection for the grid
-Implements delayed trip mechanisms for fault conditions
-Manages circuit opening/closing operations
-Protects against overload conditions
+Provides overcurrent protection for the grid.
+Implements delayed trip mechanisms for fault conditions.
+Manages circuit opening/closing operations.
+Protects against overload conditions.
 
 ### PowerGridController
 
-Central management system for all grid components
-Handles component registration and monitoring
-Processes maintenance task queues with priority scheduling
-Implements emergency shutdown and recovery procedures
-Monitors grid integrity and identifies faulty components
+Central management system for all grid components.
+Handles component registration and monitoring.
+Processes maintenance task queues with priority scheduling.
+Implements emergency shutdown and recovery procedures.
+Monitors grid integrity and identifies faulty components.
 
 ## Supporting Systems
 ### Maintenance Management
 
-MantainanceTask: Represents scheduled maintenance operations
-Priority-based task scheduling (Emergency → Corrective → Preventive → Routine)
-Automatic scheduling based on maintenance type and component history
-Task execution with proper component isolation
+MantainanceTask: Represents scheduled maintenance operations.
+Priority-based task scheduling (Emergency → Corrective → Preventive → Routine).
+Automatic scheduling based on maintenance type and component history.
+Task execution with proper component isolation.
 
 ### Status Management
 
-Component status tracking (OPERATIONAL, MAINTENANCE, FAULT, OFFLINE)
-Grid-wide status monitoring and fault detection
-Automated response to component failures
+Component status tracking (OPERATIONAL, MAINTENANCE, FAULT, OFFLINE).
+Grid-wide status monitoring and fault detection.
+Automated response to component failures.
 
 ## Key Features
 ### 1. Realistic Electrical Modeling
 
-Three-phase power calculations
-Power factor correction mechanisms
-Voltage transformation ratios
-Current and voltage validation limits
-Efficiency calculations based on electrical losses
+Three-phase power calculations.
+Power factor correction mechanisms.
+Voltage transformation ratios.
+Current and voltage validation limits.
+Efficiency calculations based on electrical losses.
 
 ### 2. Fault Detection and Protection
 
-Overcurrent protection via circuit breakers
-Temperature monitoring for transformers
-Excitation field monitoring for generators
-Automatic component isolation during faults
+Overcurrent protection via circuit breakers.
+Temperature monitoring for transformers.
+Excitation field monitoring for generators.
+Automatic component isolation during faults.
 
 ### 3. Maintenance Management
 
-Priority-based maintenance scheduling
-Maintenance history tracking
-Component-specific maintenance procedures
-Queue processing with proper component isolation
+Priority-based maintenance scheduling.
+Maintenance history tracking.
+Component-specific maintenance procedures.
+Queue processing with proper component isolation.
 
 ### 4. Grid Control Operations
 
-Emergency shutdown procedures
-Grid recovery and restart operations
-Load balancing capabilities
-Component connectivity management
+Emergency shutdown procedures.
+Grid recovery and restart operations.
+Load balancing capabilities.
+Component connectivity management.
 
 ### 5. Monitoring and Diagnostics
 
-Real-time grid status monitoring
-Component health validation
-Faulty component identification
-Operational parameter verification
+Real-time grid status monitoring.
+Component health validation.
+Faulty component identification.
+Operational parameter verification.
 
 ## System Flow
 
-### Initialization: Components are created and registered with the grid controller
-### Normal Operation: Generator produces power, transformer steps voltage, circuit breaker manages protection
-### Monitoring: Continuous monitoring of all component parameters and grid status
-### Maintenance: Scheduled maintenance tasks are processed based on priority
-### Fault Response: Automatic protection mechanisms activate during fault conditions
-### Recovery: Controlled restart and recovery procedures restore grid operation
+### Initialization: Components are created and registered with the grid controller.
+### Normal Operation: Generator produces power, transformer steps voltage, circuit breaker manages protection.
+### Monitoring: Continuous monitoring of all component parameters and grid status.
+### Maintenance: Scheduled maintenance tasks are processed based on priority.
+### Fault Response: Automatic protection mechanisms activate during fault conditions.
+### Recovery: Controlled restart and recovery procedures restore grid operation.
 
 ## Component Relationships
 PowerGenerator → Transformer → CircuitBreaker → Load
